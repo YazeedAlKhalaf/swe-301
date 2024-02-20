@@ -1,5 +1,6 @@
 \documentclass[a4paper]{report}
 \usepackage{graphicx}
+\usepackage{booktabs}
 
 \title{Foreign Exchange Management System (FXMS)}
 \author{
@@ -9,7 +10,7 @@
     \textbf{Course:} SWE 301 - Requirements Engineering \\
     \textbf{Instructor:} Dr. Noureddine Abbadeni
 }
-\date{19 Feb, 2024}
+\date{20 Feb, 2024}
 
 \begin{document}
 
@@ -96,6 +97,30 @@ The cashflow analysis below in Figure \ref{fig:cash-flow-analysis} is a condense
 \end{figure}
 
 \chapter{Methodology}
+
+Below in Table \ref{tab:methodology-criteria}, the criteria we used to choose our methodology are mentioned with what we chose. 
+
+\begin{table}[htbp]
+    \centering
+    \caption{Criteria Evaluation for System Development}
+    \label{tab:methodology-criteria}
+    \begin{tabular}{@{}p{0.7\linewidth}c@{}}
+        \toprule
+        Criteria & Answer \\
+        \midrule
+        Are the requirements clear? & Yes \\
+        Is the technology familiar to the team? & Yes \\
+        Is the system complex? & Yes \\
+        Does the system need to be reliable? & Yes \\
+        Is the system scheduled to be built in a short time? & No \\
+        Do we have schedule visibility? & Yes \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+We decided to go with V-Model methodology since it is simple and straightforward, and the testing phase ensures quality and reliability, in addition to the quality personnel and the engineers themselves who will bake the quality in. We don't beleive in doing quality work after the fact since it should be built and baked in from the beginning.
+
+Also since the project requirements are clear and the team is comfortable with the technology, the V-Model methodology fits the use case and helps the project succeed.
 
 \chapter{Project Workplan}
 
