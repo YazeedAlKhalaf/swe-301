@@ -109,29 +109,61 @@ The project overall risk is medium. Although the team familiarity is high, the s
 
 \chapter{Methodology}
 
-Below in Table \ref{tab:methodology-criteria}, the criteria we used to choose our methodology are mentioned with what we chose. 
+Now we will evaluate the methodologies we can use to build the system. We will follow a three step approach to help us choose the right methodology. The three steps are:
+
+\begin{enumerate}
+    \item \textbf{Criteria:} We will list the criteria we will use to evaluate the methodologies and answer them according to our familiarity.
+    \item \textbf{Evaluation:} We will evaluate the methodologies based on the criteria answers above. This will help us in choosing the right methodology.
+    \item \textbf{Selection:} We will choose the methodology that fits the use case. It might not be a 100\% fit, it would be the most suitable one.
+\end{enumerate}
+
+\section{Criteria}
+
+The criteria we will use to evaluate the methodologies are shown and answered in Table \ref{tab:criteria-answers}.
 
 \begin{table}[htbp]
     \centering
-    \caption{Criteria Evaluation for System Development Methodologies}
-    \label{tab:methodology-criteria}
-    \begin{tabular}{@{}p{0.4\linewidth}ccc@{}}
+    \caption{Criteria Answers for System Development Methodologies}
+    \label{tab:criteria-answers}
+    \begin{tabular}{@{}p{0.5\linewidth}cc@{}}
         \toprule
-        Criteria & Waterfall & Parallel & V-Model \\
+        Criteria & Answer \\
         \midrule
-        Are the requirements clear? & Yes (Poor) & Yes (Poor) & Yes (Poor) \\
-        Is the technology familiar to the team? & Yes (Poor) & Yes (Good) & Yes (Good) \\
-        Is the system complex? & Yes (Good) & Yes (Good) & Yes (Good) \\
-        Does the system need to be reliable? & Yes (Good) & Yes (Good) & Yes (Excellent) \\
-        Is the system scheduled to be built in a short time? & No (Poor) & No (Good) & No (Poor) \\
-        Do we have schedule visibility? & Yes (Poor) & Yes (Good) & Yes (Poor) \\
+        Are the requiremnts unclear? & Yes \\
+        Are we unfamiliar with the technology? & No \\
+        Are the requirements complex? & Yes \\
+        Should the system be reliable? & Yes \\
+        Is time allocated for building the system short? & No \\
+        Do we have schedule visibility? & No \\
         \bottomrule
     \end{tabular}
 \end{table}
 
-We decided to go with the V-Model methodology since it is simple and straightforward, and the testing phase ensures quality and reliability, in addition to the quality personnel and the engineers themselves who will bake the quality in. We don't believe in doing quality work after the fact since it should be built and baked in from the beginning.
+\section{Evaluation}
 
-Also since the project requirements are clear and the team is comfortable with the technology, the V-Model methodology fits the use case and helps the project succeed.
+We will evaluate the methodologies based on the criteria answers above. The following table, \ref{tab:criteria-evaulation}, shows each criteria and the methodology that fits it based on our answer from the previous section in Table \ref{tab:criteria-answers}.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Criteria Evaluation for System Development Methodologies}
+    \label{tab:criteria-evaulation}
+    \begin{tabular}{@{}p{0.5\linewidth}cc@{}}
+        \toprule
+        Criteria & Fit Methodology \\
+        \midrule
+        Requirements are clear & All \\
+        Team is familiar with techonology & All \\
+        Requirments are complex & Throwaway Prototyping \\
+        System should be relable & V-Model \& Throwaway Prototyping \\
+        Time allocated for building is not short & All \\
+        We don't have schedule visibility & All \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Selection}
+
+Based on the evaluation above, we will choose the methodology that fits the use case. The methodology that fits the use case is the "Throwaway Prototyping" methodology. This methodology fits the use case because the requirements are complex and the system should be reliable. And since other criterions are not a problem, we can choose this methodology.
 
 \chapter{Project Workplan}
 
