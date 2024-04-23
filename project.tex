@@ -189,14 +189,81 @@ The project workplan is shown in Figure \ref{fig:wbs}. The project is divided in
 
 \chapter{Gathering/Elicitation Techniques}
 
+\begin{itemize}
+    \item \textbf{Type of information:} A mix between as-is (existing data sources) and to-be (our new system). The techniques that appeal are:
+          \begin{itemize}
+              \item Interviews
+              \item Joint Application Design (JAD)
+          \end{itemize}
+    \item \textbf{Depth of information:} High depth of information is required since the system is complex and deals with financial information, we can't affoed losses because of aasumptions. Hence, the techniques that appeal are:
+          \begin{itemize}
+              \item Interviews
+              \item Joint Application Design (JAD)
+          \end{itemize}
+    \item \textbf{Breadth of information:} Medium breadth of information is required. The techniques that appeal are:
+          \begin{itemize}
+              \item Joint Application Design (JAD)
+          \end{itemize}
+    \item \textbf{Integration of information:} We need to integrate data from different stakeholders, so high integration is required. The techniques that appeal are:
+          \begin{itemize}
+              \item Joint Application Design (JAD)
+          \end{itemize}
+    \item \textbf{User Involvement:} High involvement is required. The techniques that appeal are:
+          \begin{itemize}
+              \item Joint Application Design (JAD)
+          \end{itemize}
+    \item \textbf{Cost:} Since the time required to do the project is short, money shouldn't be a problem. All techniques are low to medium so all of the apply here.
+\end{itemize}
+
+Based on the facts stated below for each criterion, we have concluded that the most suitable techniques:
+
+\begin{itemize}
+    \item Interviews
+    \item Joint Application Design (JAD)
+\end{itemize}
+
 \chapter{Requirements Analysis}
+
+TODO
 
 \chapter{List of Stakeholders}
 
+Based on the information provided, the following stakeholders can be identified:
+\begin{itemize}
+    \item Traders
+    \item Clients (Organizations and Companies)
+    \item Coverage Groups
+    \item Investment Bank (Business User/Sponsor)
+\end{itemize}
+
 \chapter{System Boundary}
+
+TODO
 
 \chapter{Functional Requirements}
 
+Based on the information provided, the following functional requirements can be identified:
+\begin{itemize}
+    \item The system shall allow managing accounts (insert, update, delete)
+    \item The system shall allow managing trades (insert, update, delete)
+    \item The system shall allow managing traders and coverage groups (assign traders to groups, move traders between groups)
+    \item The system shall support different types of FX trades (spot, forward, swap, options)
+    \item The system shall allow managing currencies and rates with a daily update of rates.
+    \item The system shall calculate profit and loss for each trade
+    \item The FXMS shall be able to search and retrieve specific trades using customizable filters (currencies, exchange rates, regions, dates).
+    \item The FXMS shall be able to generate different types of reports (PnL, trade history, ...).
+\end{itemize}
+
 \chapter{Non-Functional Requirements}
+
+\begin{itemize}
+    \item Deployment: The system shall be deployed on Windows 10.
+    \item Delivery Time: The system shall be delivered by the end of the current year.
+    \item Performance: The system shall be able to execute a trade in a short time (50 trades per second).
+    \item Availability: The system shall be available between 6am to 6pm. Bugs shall be resolved within 30 minutes maxmimum in those hours.
+    \item Security: The system shall have role-based access control to manage users access to data (such as identity of customers, PnL, ...) and there should be strict access control to the system.
+    \item Reliability: The system shall be reliable and available 99.9\% of the time.
+    \item Usability: The system shall be easy to use and user friendly.
+\end{itemize}
 
 \end{document}
