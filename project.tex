@@ -259,10 +259,9 @@ We have identified the system boundary as shown in the figure below in Figure \r
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{images/system-boundary.png}
-    \caption{Cashflow Analysis of FXMS}
+    \caption{System Boundary of FXMS}
     \label{fig:system-boundary}
 \end{figure}
-
 
 \chapter{Functional Requirements}
 
@@ -288,6 +287,35 @@ Based on the information provided, the following functional requirements can be 
     \item Security: The system shall have role-based access control to manage users access to data (such as identity of customers, PnL, ...) and there should be strict access control to the system.
     \item Reliability: The system shall be reliable and available 99.9\% of the time.
     \item Usability: The system shall be easy to use and user friendly.
+\end{enumerate}
+
+\chapter{UC Model}
+
+\section{Use Case Diagram}
+
+The use case diagram of the FXMS is shown in Figure \ref{fig:use-case-diagram}. The diagrams shows the functional requirements of the sytem layed out at use cases so that it is easier to comprehed.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{images/use-case-diagram.png}
+    \caption{Use Case Diagram of FXMS}
+    \label{fig:use-case-diagram}
+\end{figure}
+
+
+\section{Use Cases Descriptions}
+
+TODO
+
+\chapter{NFRs Specification}
+
+\begin{enumerate}
+    \item \textbf{Usability:} The system shall allow any action for the trader in three or less clicks.
+    \item \textbf{Reliability:} The system shall be up 99.99\% of the time.
+    \item \textbf{Accuracy:} The system shall save the amounts in integer format using the smallest unit of the currency.
+    \item \textbf{Throughput:} The system shall execute 50 trades per second.
+    \item \textbf{Security:} The system shall have a role-based access control (RBAC) system.
+    \item \textbf{Security:} The system shall have multi-factor mechanism in place.
 \end{enumerate}
 
 \end{document}
