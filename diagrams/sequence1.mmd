@@ -1,0 +1,27 @@
+sequenceDiagram
+    participant Trader
+    participant CoverageGroup
+    participant System
+    Trader->>System: Initiate Spot Trade
+    CoverageGroup->>System: Initiate Spot Trade
+    System->>Trader: Prompt for Product
+    System->>CoverageGroup: Prompt for Product
+    Trader->>System: Select Product
+    CoverageGroup->>System: Select Product
+    System->>Trader: Prompt for Amount
+    System->>CoverageGroup: Prompt for Amount
+    Trader->>System: Enter Amount
+    CoverageGroup->>System: Enter Amount
+    System->>System: Check Account Selection
+    alt Account not selected
+        System->>System: Use Base Account
+    end
+    System->>System: Register Trade
+    System->>System: Check Balance
+    alt Insufficient Balance
+        System->>Trader: Trade Failure
+        System->>CoverageGroup: Trade Failure
+    else Sufficient Balance
+        System->>Trader: Trade Success
+        System->>CoverageGroup: Trade Success
+    end
