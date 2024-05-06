@@ -1,6 +1,8 @@
 \documentclass[a4paper]{report}
 \usepackage{graphicx}
 \usepackage{booktabs}
+\usepackage{pdfpages}
+\DeclareGraphicsRule{.docx}{pdf}{.pdf}{`pandoc #1 -o \noexpand\OutputFile}
 
 \title{Foreign Exchange Management System (FXMS)}
 \author{
@@ -302,10 +304,35 @@ The use case diagram of the FXMS is shown in Figure \ref{fig:use-case-diagram}. 
     \label{fig:use-case-diagram}
 \end{figure}
 
-
 \section{Use Cases Descriptions}
 
-TODO
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{images/uc/1-do-spot-trade.png}
+    \caption{Do Spot Trade}
+    \label{fig:1-do-spot-trade}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{images/uc/2-do-forward-trade.png}
+    \caption{Do Forward Trade}
+    \label{fig:2-do-forward-trade}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{images/uc/3-do-swap-trade.png}
+    \caption{Do Swap Trade}
+    \label{fig:3-do-swap-trade}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{images/uc/4-do-options-trade.png}
+    \caption{Do Options Trade}
+    \label{fig:4-do-options-trade}
+\end{figure}
 
 \chapter{NFRs Specification}
 
